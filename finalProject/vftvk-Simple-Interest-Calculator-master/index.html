@@ -4,16 +4,32 @@
         <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Crear un contenedor flexible */
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Separación entre el slider y el valor */
+        }
+
+        /* Fijar el ancho del input range */
+        input[type="range"] {
+            width: 300px; /* Ajusta según sea necesario */
+        }
+
+    </style>
     </head>
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+        <div class="slider-container">
+            Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()"> 
         <span id="rate_val">
-            10.25
+             10.25 
         </span>%<br/>
+        </div>
         No. of Years <input type="number"  id="years" list="all_years">
         <datalist id="all_years">
             <option value="1">1</option>

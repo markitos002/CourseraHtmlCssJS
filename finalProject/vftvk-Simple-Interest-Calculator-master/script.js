@@ -19,8 +19,17 @@ function compute()
     }
 }
 
-function updateRate(){
+//function updateRate(){
+//    var rateval = document.getElementById("rate").value;
+ //   document.getElementById("rate_val").innerText = rateval; }
+ //modificado de  Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+ // para que se vaya actualizando el valor del rango en el input de texto
+
+
+ function updateRate() {
+    // Obtener el valor del control deslizante
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText = rateval;   
+    // Mostrar el valor actualizado
+    document.getElementById("rate_val").textContent = rateval;
 }
         

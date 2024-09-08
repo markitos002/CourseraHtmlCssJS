@@ -18,4 +18,9 @@ h1{
 
 }
 
-
+/* Fijar el ancho del span */
+#rate {
+    display: inline-block;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    text-align: center; /* Opcional: Alineación del texto */
+}
