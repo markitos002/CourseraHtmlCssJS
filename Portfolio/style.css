@@ -1,0 +1,10 @@
+body{
+    text-align: left;
+}
+
+.menu{
+    text-align: right;
+    background-color: #d1cccc;
+    overflow: hidden;
+    cursor: pointer;
+}
